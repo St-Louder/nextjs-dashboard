@@ -125,6 +125,6 @@ export async function GET() {
     console.error(error);
 
     // Return error response with 500 status code
-    return Response.json({ error: error.message || 'Database seeding failed' }, { status: 500 });
+    return Response.json({ error: (error as Error).message || 'Database seeding failed' }, { status: 500 });
   }
 }

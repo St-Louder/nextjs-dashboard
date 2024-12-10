@@ -26,6 +26,6 @@ export async function GET() {
     console.error(error);
 
     // Return a 500 error response with the error message
-    return Response.json({ error: error.message || 'Failed to fetch invoices' }, { status: 500 });
+    return Response.json({ error: (error as Error).message || 'Failed to fetch invoices' }, { status: 500 });
   }
 }
