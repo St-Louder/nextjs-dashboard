@@ -30,6 +30,6 @@
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.ts",
     "scripts/seed.js"
-  ],
+, "scripts/generate-secret.js"  ],
   "exclude": ["node_modules"]
 }

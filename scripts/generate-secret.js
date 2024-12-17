@@ -1,8 +1,8 @@
-import crypto from 'crypto';
+const crypto = require('crypto');
 
 const generateSecret = () => {
   const secret = crypto.randomBytes(32).toString('base64');
-  console.log(`AUTH_SECRET=${secret}`);
+  console.log(`Generated secret: ${secret}`);
 };
 
 generateSecret();
